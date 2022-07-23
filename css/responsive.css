@@ -15,21 +15,6 @@
 		max-height: 77px;
 	}
 
-	.calculate .left_child .passport {
-		padding: 35px 0px 29px 160px;
-	}
-
-	.calculate .right_child .passport {
-		padding: 33px 0px 27px 158px;
-	}
-
-	.calculate .left_child .passport p::before {
-		right: -100px;
-	}
-
-	.calculate .right_child .passport p::before {
-		right: -100px;
-	}
 
 	.calculate .passport p {
 		max-width: 300px;
@@ -37,50 +22,27 @@
 }
 
 @media (max-width: 1440px) {
+
+	.calculate .passport .text {
+		align-items: flex-start;
+	}
+
 	.for_page .container {
 		max-width: 1100px;
 	}
 
-	.calculate .left_child .passport {
-		padding: 30px;
-		overflow: hidden;
-	}
 
 	.calculate .right_child .passport {
-		padding: 30px;
+		max-height: 214px;
 		overflow: hidden;
+		padding: 20px;
 	}
 
-	.calculate .left_child .passport h2 {
-		margin-left: 75px;
-	}
-
-	.calculate .right_child .passport h2 {
-		margin-left: 75px;
-	}
-
-	.calculate .left_child .passport h2::before {
-		left: -70px;
-	}
-
-	.calculate .right_child .passport h2::before {
-		left: -70px;
-	}
-
-	.calculate .right_child .passport {
-		max-height: 188px;
-	}
-
-	.calculate .left_child .passport p::before {
-		right: -43%;
-	}
-
-	.calculate .right_child .passport p::before {
-		right: -43%;
-	}
 
 	.calculate .left_child .passport {
-		max-height: 190px;
+		max-height: 216px;
+		overflow: hidden;
+		padding: 20px;
 	}
 
 	.offers .offers_child2,
@@ -270,11 +232,11 @@
 	}
 
 	.calculate .right_child .passport {
-		max-height: 220px;
+		max-height: 185px;
 	}
 
 	.calculate .left_child .passport {
-		max-height: 222px;
+		max-height: 187px;
 	}
 
 	.formNumber .text h2 {
@@ -391,6 +353,8 @@
 }
 
 @media (max-width: 500px) {
+
+
 	.action .action_box .action_text h2 {
 		font-family: 'Roboto';
 		font-style: normal;
@@ -455,7 +419,7 @@
 
 	.calculate .left_child .passport {
 		max-height: 168px;
-		max-width: 300px;
+		max-width: 90%;
 	}
 
 	.calculate .left_child .passport h2 {
@@ -468,7 +432,7 @@
 	}
 
 	.calculate .passport p {
-		max-width: 172px;
+		max-width: 65%;
 	}
 
 	.calculate .passport p {
@@ -489,7 +453,7 @@
 
 	.calculate .right_child .passport {
 		max-height: 168px;
-		max-width: 300px;
+		max-width: 90%;
 	}
 
 	.calculate .right_child .passport h2 {
@@ -566,6 +530,14 @@
 	.header .banner h1 {
 		font-size: 47px;
 		line-height: 44px;
+	}
+
+	.for_page .calculate .passport .text p {
+		margin-left: 72px;
+	}
+
+	.for_page .calculate .passport .title h2 {
+		margin-left: 25px;
 	}
 }
 
@@ -680,6 +652,14 @@
 	.trepte .container {
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+
+	.for_page .calculate .left_child .passport {
+		height: 100%;
+	}
+
+	.for_page .calculate .right_child .passport {
+		height: 100%;
 	}
 }
 

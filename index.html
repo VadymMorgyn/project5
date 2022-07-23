@@ -100,8 +100,14 @@ de 10% cashback anual și multe alte oferte!</p>
 					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 left_child">
 
 							<div class="passport passport1">
-								<h2>ÎNCARCĂ POZE CU<br> PAȘAPORTUL TEHNIC</h2>
-								<p>Încarcă poze cu pașaportul tehnic față și verso al autovehiculului, lasă-ne datele de contact și vei primi oferta de preț exact în doar câteva minute.<span class="btn_modal1">></span></p>
+								<div class="title">
+									<img src="img/icon1.png" alt="404">
+									<h2>ÎNCARCĂ POZE CU<br> PAȘAPORTUL TEHNIC</h2>
+								</div>
+								<div class="text">
+									<p>Încarcă poze cu pașaportul tehnic față și verso al autovehiculului, lasă-ne datele de contact și vei primi oferta de preț exact în doar câteva minute.</p>
+								<img class="btn_modal1" src="img/icon5.png" alt="404">
+								</div>
 							</div>
 
 						<div class="panel panel1 modal1">
@@ -114,12 +120,18 @@ de 10% cashback anual și multe alte oferte!</p>
 						</div>
 					</div>
 					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 right_child">
-					
-							<div class="passport passport2">
-							<h2>ÎNCARCĂ POZE CU<br> PAȘAPORTUL TEHNIC</h2>
-						<p>Încarcă poze cu pașaportul tehnic față și verso al autovehiculului, lasă-ne datele de contact și vei primi oferta de preț exact în doar câteva minute.<span class="btn_modal2">></span></p>
-							</div>
 
+						<div class="passport passport2">
+							<div class="title">
+									<img src="img/icon3.png" alt="404">
+									<h2>ÎNCARCĂ POZE CU<br> PAȘAPORTUL TEHNIC</h2>
+								</div>
+								<div class="text">
+									<p>Încarcă poze cu pașaportul tehnic față și verso al autovehiculului, lasă-ne datele de contact și vei primi oferta de preț exact în doar câteva minute.</p>
+								<img class="btn_modal2" src="img/icon6.png" alt="404">
+								</div>
+						</div>
+					
 						<div class="panel panel2 modal1">
 						<form  class="form1" action="/action_page.php">
 							<h2><i class="fa-solid fa-arrow-down i1"></i>ÎNCARCĂ POZA</h2>
@@ -231,23 +243,35 @@ de 10% cashback anual și multe alte oferte!</p>
 	</body>
 		<script>
 jQuery(document).ready(function () {
+
+
 	jQuery('.passport1').click(function(event){
-		jQuery(this).next().slideToggle();(300);
+		jQuery(this).next().slideToggle(300);
 		jQuery('.btn_modal1').toggleClass('active');
-
-				
-				
+		jQuery('.btn_modal1.active').attr("src", "img/icon2.png")
+				jQuery('.passport1').click(function(event){		
+			jQuery('.btn_modal1').attr("src", "img/icon5.png");
+			jQuery('.passport1').click(function(event){
+				jQuery('.btn_modal1.active').attr("src", "img/icon2.png")
+			})				
 			});
+		});
 
-	jQuery('.passport2').click(function(event){
-		jQuery(this).next().slideToggle();(300);
+		jQuery('.passport2').click(function(event){
+		jQuery(this).next().slideToggle(300);
 		jQuery('.btn_modal2').toggleClass('active');
-
-				
-				
+		jQuery('.btn_modal2.active').attr("src", "img/icon4.png")
+				jQuery('.passport2').click(function(event){		
+			jQuery('.btn_modal2').attr("src", "img/icon6.png");
+			jQuery('.passport2').click(function(event){
+				jQuery('.btn_modal2.active').attr("src", "img/icon4.png")
+			})				
 			});
+		})
 
-			})
+
+
+	})
 		
 
 
